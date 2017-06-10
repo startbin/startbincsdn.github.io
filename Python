@@ -1,0 +1,124 @@
+Python 是一门高级的，面向对象的，解释性，脚本语言。
+	主要特点：
+1、	学习成本低
+学习之后可以完成工作
+学习占用时间不多
+2、	功能强大
+1、	开源的，有很多人支持python开发
+2、	Python具有很丰富的类库
+内置模块：是指我们在安装python之后，python自带的模块
+三方模块：三方是我们需要自己安装的模块
+3、	python是一门和其他语言契合性特别高的语言
+可以轻松的调用其他语言编写的模块
+胶水语言
+4、	python的开发效率很高
+开发效率高但是运行运算效率低
+我们首先用python将整个项目大体的框架搭建起来，然后，在具体要求运行效率的地方用其他语言从写。
+ 		高级语言贴近开发者，对应于底层语言，底层语言贴近机器
+		面向对象对应于面向过程，是开发人员在开发过程当中的思路，是程序员的世界观。
+		编程：
+			就是我们开发人员使用计算机和人类约定好的语法，向计算机阐述某种事实。
+		解释性对应于编译性语言
+Python 安装
+	2.7 运维我们对Linux操作较多，而Linux当中python多为2版本
+	我们也会将 3的特征
+	Windows
+1、	下载安装包
+1、	python 2.7  
+python的版本要和系统匹配 
+系统是32位系统，我们必须下载32位python
+如果系统是64位，可以安装32python，也可以安装64位的python
+2、	pycharm    
+激活码：http://xidea.online
+		Python常用的目录
+1、	lib 里面存放着当前版本python所有模块
+lib/ site-packages 存放着说有的三方模块
+2、	Doc 里面存放着当前版本python的手册
+3、	Scripts 默认python是没有的
+我们安装完python环境通常会部署easy_install 和 pip这两个python包管理工具
+在这两个工具部署完成之后，我们就会出现scripts 目录，该目录下存放着模块的环境变量
+		
+		Python 环境变量配置
+		我们安装完python之后会得到
+		python.exe  python脚本的环境变量
+		pythonw.exe python图形化脚本的环境变量
+		
+		python 脚本：
+			.py 脚本
+			.pyc 临时文件
+			.pyw 图形化文件
+		告诉系统我们在命令行敲击python 我们要执行那个文件
+		1、获取我们python安装的根目录，并且复制
+			 
+2、	右击计算机-属性-高级系统设置-环境变量
+ 
+3、	找到path环境变量如果没有自己创建path环境变量，并将我们复制的地址复制到环境变量的值当中，路径之间要以分号隔开，注意全半角符号。
+新建环境变量
+ 
+添加环境变量：
+	 
+剩下就是应用，确定，退出
+然后我们用win+R 调出 运行，输入cmd回车
+ 
+回车之后出现cmd命令行
+我们在命令行当中输入python，得到python的交互式界面，这样证明我们python的环境变量没有问题，配置成功
+ 
+		Python 的包管理工具的安装
+1、	我们要安装Setuptools：
+https://pypi.python.org/pypi/setuptools
+第一种：
+		我们下载的是一个可执行文件，双击执行
+第二种：
+		我们下载的是一个压缩包，解压，执行目录当中的setup.py
+		Python setup.py install
+		这种安装方式适用于所有压缩包形式的python三方模块的安装
+当setuptools安装完成，我们的python目录下就会自动出现scripts目录
+我们需要把该路径同样加到环境变量里。
+				 
+				 
+			配置这个之后，我们就可以在我们的cmd当中直接运行一个命令
+			easy_install
+			然后我们用easy_install 安装pip
+			 
+			到此为止，我们的python包管理工具安装完成
+			我们可以用easy_install 和 pip 安装我们需要的python三方模块
+注: 先安装python，再安装pycharm
+		Python 脚本
+			Python具有很成熟的编译器
+				Sublime
+				Pycharm
+				Ipython
+				
+				IDLE python gui 
+				 
+				界面简单
+				补全功能弱小
+				是很好的入门编译器
+				IDLE 交互式 类似于我们cmd当中执行python环境变量得到的交互式界面
+				我们写一行代码，执行一行
+				 
+				IDLE 脚本式，是我们工作当中最长用到的一种
+				交互式的基础上新建出来的是脚本式
+1、	脚本运行前必须保存
+并且保存为py或者pyw
+2、	禁止大家起a.py b.py类似的无聊名字
+ 
+3、	如果是在Linux下用vim编译器
+脚本第一行
+#！/usr/bin/python 指出python的环境变量
+第二行 申明字符集
+#coding：utf-8
+或者
+#coding：gbk
+4、	脚本执行
+1、	IDLE F5可以执行
+ 
+2、	python 脚本名称
+这里的脚本名称包括
+1、	脚本的路径，当前路径可以不写
+2、	脚本的名称
+3、	脚本的后缀
+ 
+	Linux  自带对应版本的python
+		Redhat centos 6 –> 2.6
+		Redhat centos 7 –> 2.7
